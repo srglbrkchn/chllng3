@@ -1,0 +1,305 @@
+body {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-size: cover;
+  padding: 7rem 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+div ul {
+  float: left;
+  padding: 0;
+}
+
+div ul li {
+  width: 22rem;
+  float: left;
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding: 5px 0;
+}
+
+div ul li ul {
+  display: none;
+  position: relative;
+}
+
+div ul li:target ul {
+  display: block;
+}
+
+div ul li:target a {
+  font-weight: 800;
+  color: #000;
+}
+
+div ul li:target a:hover {
+  font-weight: 800;
+  color: #000;
+}
+
+div ul li:target ul li {
+  border: none;
+}
+
+div ul li:target ul li a {
+  font-weight: normal;
+  color: hsl(240, 6%, 50%);
+}
+
+div ul li:target ul li a:hover {
+  font-weight: normal;
+  color: hsl(240, 6%, 50%);
+}
+
+div ul li:target a img {
+  transform: rotate(180deg);
+}
+
+div ul li ul li a {
+  padding: 0 14px 15px 0;
+  color: hsl(240, 6%, 50%);
+  font-size: 13px;
+}
+
+div ul li a {
+  text-decoration: none;
+  color: hsl(240, 6%, 50%);
+  font-size: 15px;
+  padding: 10px 14px 10px 0;
+  display: block;
+}
+
+div ul li a:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+div ul li ul li a:hover {
+  color: hsl(240, 6%, 50%);
+}
+
+.arrow-icon {
+  float: right;
+}
+
+.container {
+  min-width: 25rem;
+  width: 75%;
+  background: white;
+  border-radius: 20px;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.faq {
+  background-color: #fff;
+  max-width: 20rem;
+  width: 44rem;
+  margin: 8%;
+  padding: 18% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 1rem;
+}
+
+.image {
+  width: 50%;
+  padding: 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-desktop {
+  width: 55rem;
+  position: absolute;
+  right: 8rem;
+  top: -16rem;
+}
+
+.woman-desktop-img {
+  width: 90%;
+  position: absolute;
+  left: -4rem;
+  top: 4rem;
+}
+
+.box {
+  width: 18%;
+  position: absolute;
+  left: 7%;
+  top: 54%;
+}
+
+.box-desktop-img {
+  width: 70%;
+}
+
+.bg-mobile {
+  display: none;
+}
+
+.woman-mobile-img {
+  display: none;
+}
+
+/* Tablet mode */
+@media only screen and (max-width:1200px) and (min-width:900px) {
+
+  body{
+    overflow: visible;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    min-width: 20rem;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .faq {
+    max-width: none;
+    width: 90%;
+    margin: 8% auto;
+  }
+
+  div ul li {
+    width: 95%;
+  }
+
+  div ul li ul li a {
+    font-size: 14px;
+  }
+
+  div ul li a {
+    font-size: 18px;
+    padding: 10px 18px 10px 0;
+    width: 95%;
+    display: block;
+  }
+
+  .image {
+    overflow: visible;
+    width: 50%;
+    height: 7rem;
+    margin: auto;
+    padding-bottom: 80px;
+  }
+
+  .bg-mobile {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    bottom: -1rem;
+    left: 1rem;
+  }
+
+  .woman-mobile-img {
+    display: block;
+    position: relative;
+    width: 80%;
+    top: -18rem;
+    margin: auto;
+  }
+
+
+  /* Desktop Images - non essential */
+  .box {
+    display: none;
+  }
+
+  .bg-desktop {
+    display: none;
+  }
+
+  .woman-desktop-img {
+    display: none;
+  }
+}
+
+
+
+/* Mobile mode */
+@media only screen and (max-width:900px) {
+
+  body{
+    overflow: visible;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    min-width: 20rem;
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .faq {
+    width: 90%;
+    margin: 8% auto;
+  }
+
+  .image {
+    overflow: visible;
+    width: 95%;
+    height: 5rem;
+    margin: auto;
+  }
+
+  .bg-mobile {
+    display: block;
+    position: relative;
+    margin: auto;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .woman-mobile-img {
+    display: block;
+    position: relative;
+    bottom: 14rem;
+    margin: auto;
+  }
+
+  div ul li {
+    width: 95%;
+  }
+
+  div ul li ul li a {
+    font-size: 11px;
+  }
+
+  div ul li a {
+    font-size: 12px;
+    padding: 10px 18px 10px 0;
+    width: 95%;
+    display: block;
+  }
+
+  /* Desktop Images - non essential */
+  .box {
+    display: none;
+  }
+
+  .bg-desktop {
+    display: none;
+  }
+
+  .woman-desktop-img {
+    display: none;
+  }
+}
